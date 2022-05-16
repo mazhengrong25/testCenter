@@ -31,8 +31,8 @@ module.exports = {
   },
   publicPath: process.env.NODE_ENV === 'production'? './dist/': './',
   productionSourceMap: false,
-  // devServer: {
-  //   proxy: '',
-  //   changeOrigin: true,
-  // }
+  /* care*/
+  devServer: {
+    proxy: 'http://testcenter.ys.com',
+  }
 }
